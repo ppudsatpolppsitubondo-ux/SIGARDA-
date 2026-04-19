@@ -1,7 +1,9 @@
 'use client'
 
+import { useState } from 'react'
 import { FileText, Download, ChevronRight } from 'lucide-react'
 import { Article, Regulation } from '@/types'
+import { createClient } from '@/lib/supabase'
 import { jsPDF } from 'jspdf'
 import 'jspdf-autotable'
 
